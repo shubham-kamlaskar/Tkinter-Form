@@ -31,7 +31,6 @@ def myAdd():
     a2=Label(root,text="My address is " + add1.get())
     a2.pack()
 
-
 mobile = Label(root,text="Mobile no. :")
 mobile.pack()
 mobile1= Entry(root,borderwidth=2)
@@ -42,14 +41,6 @@ def mymobile():
     m1.pack()
 
 submit =Button(root,text="Submit information ",command=lambda:[myName(),myAge(),myAdd(),mymobile()])
-
-
-
-
-
-
 submit.pack()
-
-
 
 root.mainloop()
