@@ -22,6 +22,15 @@ def myAge():
     a1=Label(root,text="My age is "+ age1.get())
     a1.pack()
 
+date=Label(root,text="Date of Birth :")
+date.pack()
+date1=Entry(root,borderwidth=2)
+date1.pack()
+
+def myDate():
+    d1=Label(root,text="My Date of Birth is " +date1.get())
+    d1.pack()
+
 add = Label(root,text="Address :")
 add.pack()
 add1= Entry(root,borderwidth=2)
@@ -30,6 +39,7 @@ add1.pack()
 def myAdd():
     a2=Label(root,text="My address is " + add1.get())
     a2.pack()
+
 
 mobile = Label(root,text="Mobile no. :")
 mobile.pack()
@@ -40,7 +50,7 @@ def mymobile():
     m1=Label(root,text="My mobile no is " + mobile1.get())
     m1.pack()
 
-submit =Button(root,text="Submit information ",command=lambda:[myName(),myAge(),myAdd(),mymobile()])
+submit =Button(root,text="Submit information ",command=lambda:[myName(),myDate(),myAge(),myAdd(),mymobile()])
 submit.pack()
 
 root.mainloop()
